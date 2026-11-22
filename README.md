@@ -1,10 +1,5 @@
 # NexFusion
 
-> **Module ID**: `io.github.a092devs.nexfusion`  
-> **Framework**: LSPosed / LSPosed Irena / LSPosed Mod (Android 8.1 – 15+)  
-> **Source Repository**: [a092devs/NexFusion](https://github.com/a092devs/NexFusion)  
-> **Patch Repository**: [a092devs/Nexfusion-Patches](https://github.com/a092devs/Nexfusion-Patches)
-
 **NexFusion** is an open-source runtime patch manager and LSPosed framework featuring a clean Material You interface. It applies in-memory bytecode hooks dynamically using **libxposed** and **DexKit** to popular Android applications without modifying the original APKs, breaking Play Store signatures, or losing official update paths.
 
 ---
