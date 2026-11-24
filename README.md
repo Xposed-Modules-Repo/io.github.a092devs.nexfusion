@@ -20,7 +20,7 @@ Unlike traditional patching tools that require compiling and repacking modified 
 NexFusion pairs with the official **NexFusion Unified Patches** bundle (`a092devs/Nexfusion-Patches`) to enhance **17+ supported application targets**:
 
 <details>
-<summary><b>🎥 Video, Audio & Streaming (5 Targets)</b> — <i>YouTube, YouTube Music, Crunchyroll, VLC, Stremio</i></summary>
+<summary><b>🎥 Video, Audio & Streaming (4 Targets)</b> — <i>YouTube, YouTube Music, Crunchyroll, Stremio</i></summary>
 <br>
 
 | Application | Package Identifier | Key Patch Capabilities |
@@ -28,7 +28,6 @@ NexFusion pairs with the official **NexFusion Unified Patches** bundle (`a092dev
 | **YouTube** | `com.google.android.youtube` | Ad-free playback, SponsorBlock, background audio, DeArrow replacement, custom speed/quality dialogs, swipe volume/brightness, miniplayer, ambient mode, Litho node bypass, channel search fix. |
 | **YouTube Music** | `com.google.android.apps.youtube.music` | Background playback, audio ad removal, exclusive audio stream playback, hide upgrade buttons, suppress promotional banners, SoundProof AI blocker, Playlist tags, offline fullscreen player, mark downloaded songs, third-party lyrics enhancement. |
 | **Crunchyroll** | `com.crunchyroll.crunchyroid` | Native Picture-in-Picture mode with contextual Skip Intro and Skip Credits controls; remove titles from Continue Watching feed. |
-| **VLC** | `org.videolan.vlc` | AMOLED pure black theme; suppress What's New changelog dialog on updates; unlock experimental feature flags; force bitstream audio passthrough; force AAudio low-latency output; raise network cache to 3000ms; disable audio time-stretch; force ReplayGain track normalization with peak protection; verbose libVLC logging. |
 | **Stremio** | `com.stremio.one` | Auto & manual intro/credits skipping using embedded chapters and stream metadata; auto-pick best stream; hide episode spoilers (synopses & thumbnails); avoid SDH subtitles; audio & subtitle track language memory; smoother playback buffer expansion; seamless binge watching; external player progress & subtitle hand-off. |
 
 </details>
@@ -62,10 +61,6 @@ NexFusion pairs with the official **NexFusion Unified Patches** bundle (`a092dev
 | **1.1.1.1** | `com.cloudflare.onedotonedotonedotone` | Spoof WARP+ Unlimited account tier in UI, disable telemetry, and optionally bypass SSL certificate pinning. |
 
 </details>
-
----
-
-## Quick Setup Guide
 
 1. **Install Module:** Download and install `NexFusion.apk` from the [Releases](https://github.com/Xposed-Modules-Repo/io.github.a092devs.nexfusion/releases) tab or LSPosed Manager.
 2. **Enable in LSPosed:** Enable the NexFusion module in your LSPosed framework.
