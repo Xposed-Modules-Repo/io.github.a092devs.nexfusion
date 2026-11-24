@@ -15,18 +15,53 @@ Unlike traditional patching tools that require compiling and repacking modified 
 
 ---
 
-## Supported Apps & Capabilities
+## Supported Applications Matrix
 
-NexFusion pairs with the official **NexFusion Unified Patches** bundle to enhance:
+NexFusion pairs with the official **NexFusion Unified Patches** bundle (`a092devs/Nexfusion-Patches`) to enhance **17+ supported application targets**:
 
-| App | Key Features |
-|---|---|
-| **YouTube** | Ad-blocking, background playback, SponsorBlock, Return YouTube Dislike, custom playback speeds |
-| **YouTube Music** | Background playback, audio-only mode, premium bar removal, ad-free listening |
-| **Telegram** | Anti-deleted messages (subtly marked with trash indicators), anti-expiring media saving, restriction bypass |
-| **Reddit** | Ad-free browsing, promoted content removal, clean feed |
-| **Instagram** | Sponsored post & ad filtering, media download capabilities |
-| **Gboard & System** | Customization options and dynamic theming enhancements |
+<details>
+<summary><b>🎥 Video, Audio & Streaming (5 Targets)</b> — <i>YouTube, YouTube Music, Crunchyroll, VLC, Stremio</i></summary>
+<br>
+
+| Application | Package Identifier | Key Patch Capabilities |
+|---|---|---|
+| **YouTube** | `com.google.android.youtube` | Ad-free playback, SponsorBlock, background audio, DeArrow replacement, custom speed/quality dialogs, swipe volume/brightness, miniplayer, ambient mode, Litho node bypass, channel search fix. |
+| **YouTube Music** | `com.google.android.apps.youtube.music` | Background playback, audio ad removal, exclusive audio stream playback, hide upgrade buttons, suppress promotional banners, SoundProof AI blocker, Playlist tags, offline fullscreen player, mark downloaded songs, third-party lyrics enhancement. |
+| **Crunchyroll** | `com.crunchyroll.crunchyroid` | Native Picture-in-Picture mode with contextual Skip Intro and Skip Credits controls; remove titles from Continue Watching feed. |
+| **VLC** | `org.videolan.vlc` | AMOLED pure black theme; suppress What's New changelog dialog on updates; unlock experimental feature flags; force bitstream audio passthrough; force AAudio low-latency output; raise network cache to 3000ms; disable audio time-stretch; force ReplayGain track normalization with peak protection; verbose libVLC logging. |
+| **Stremio** | `com.stremio.one` | Auto & manual intro/credits skipping using embedded chapters and stream metadata; auto-pick best stream; hide episode spoilers (synopses & thumbnails); avoid SDH subtitles; audio & subtitle track language memory; smoother playback buffer expansion; seamless binge watching; external player progress & subtitle hand-off. |
+
+</details>
+
+<details>
+<summary><b>💬 Social Networks & Messaging (5 Targets)</b> — <i>Instagram, X (Twitter), Reddit, Discord, LinkedIn</i></summary>
+<br>
+
+| Application | Package Identifier | Key Patch Capabilities |
+|---|---|---|
+| **Instagram** | `com.instagram.android` | Media downloader for feed posts, Reels, Stories, Highlights, and profile pictures; remove sponsored feed posts, Reels, and Story ads; anonymous Story and Live viewing; anonymous DM viewing & disappearing media viewing; strip tracking parameters; remove build expired lockout; hide Meta AI. |
+| **X (Twitter)** | `com.twitter.android` | Promoted post and ad removal; video and GIF media downloader; bypass Compose sensitive media blur interstitials without tap-to-reveal; block forced updates; telemetry blackholing. |
+| **Reddit** | `com.reddit.frontpage` | Feed and comment ad removal; guest browsing mode; sanitize shared URLs; suppress screenshot sharing bottom sheet; unmute Redgifs streams; custom feed sorting. |
+| **Discord** | `com.discord` | Suppress crash telemetry, analytics, touch logging, and advertising identifiers; native system font typography support across chat and UI surfaces. |
+| **LinkedIn** | `com.linkedin.android` | 1-tap media downloader for photos, carousel images, and progressive MP4 videos; sanitize share links; direct URL navigation bypassing redirects; hide suggested posts, promoted jobs, and premium upsells; feed filters; Material You dynamic theme. |
+
+</details>
+
+<details>
+<summary><b>🛠️ System, Productivity & Utilities (7 Targets)</b> — <i>Google Photos, Google Maps, Gboard, Gmail, Google App (Discover), Proton VPN, 1.1.1.1</i></summary>
+<br>
+
+| Application | Package Identifier | Key Patch Capabilities |
+|---|---|---|
+| **Google Photos** | `com.google.android.apps.photos` | Device spoofing for unlimited original-quality Google Photos cloud storage backups; DCIM folder backup control. |
+| **Google Maps** | `com.google.android.apps.maps` | Sponsored pin and search ad suppression, high refresh rate unlock (90/120 Hz), telemetry blocking, hide AI clutter, AMOLED black theme. |
+| **Gboard** | `com.google.android.inputmethod.latin` | Rounded keycaps; Google Sans Flex typography & GM3 Expressive styling; proactive post-correction undo controls; Quick & Magic Emoji (Emojify); expanded AI writing tools; spellchecker chips UI; scan text OCR; spacebar cursor trackpad. |
+| **Gmail** | `com.google.android.gm` | Suppress sponsored promotional and advertising cards in personal inboxes. |
+| **Google App (Discover)** | `com.google.android.googlequicksearchbox` | Filter sponsored cards, shopping ads, and promotional recommendations in the Discover feed. |
+| **Proton VPN** | `ch.protonvpn.android` | Suppress upgrade banners and nag dialogs; unlock NetShield UI toggles; disable telemetry and background observability workers. |
+| **1.1.1.1** | `com.cloudflare.onedotonedotonedotone` | Spoof WARP+ Unlimited account tier in UI, disable telemetry, and optionally bypass SSL certificate pinning. |
+
+</details>
 
 ---
 
